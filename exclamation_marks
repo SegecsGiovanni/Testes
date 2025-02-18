@@ -1,0 +1,22 @@
+dct = {
+    'a' : '!',
+    'e' : '!',
+    'i' : '!',
+    'o' : '!',
+    'u' : '!',
+    'A' : '!',
+    'E' : '!',
+    'I' : '!',
+    'O' : '!',
+    'U' : '!',
+}
+
+letters = "aeiou"
+
+def replace_exclamation(st):
+    if any(letter in st for letter in dct):
+        for original, substitute in dct.items():
+            st = st.replace(original, substitute)
+        return st
+    else:
+        return st
