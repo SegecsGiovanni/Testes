@@ -1,0 +1,9 @@
+NotJaden_Cased = "How can mirrors be real if our eyes aren't real"
+
+def to_jaden_case(string):
+    NotJaden_Cased_Split = string.split()
+    result = [word.capitalize() if not "'" in word else word[0].upper() + word[1:].lower() for word in NotJaden_Cased_Split]
+    return " ".join(result)
+
+result = to_jaden_case(NotJaden_Cased)
+print(result)
