@@ -1,0 +1,23 @@
+dct = {
+    "ą" : "a",
+    "ć" : "c",
+    "ę" : "e",
+    "ł" : "l",
+    "ń" : "n",
+    "ó" : "o",
+    "ś" : "s",
+    "ź" : "z",
+    "ż" : "z",
+}
+
+name_in_pol = "Jędrzej Błądziński"
+
+def correct_polish_letters(st): 
+    if any(letter in st for letter in dct):
+        for original, substitute in dct.items():
+            st = st.replace(original, substitute)
+        return st
+    else:
+        return st
+
+correct_polish_letters(name_in_pol)
