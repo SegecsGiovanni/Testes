@@ -1,0 +1,4 @@
+def positive_sum(arr):
+    positive_num = [num for num in arr if num >= 0]
+    result = sum(positive_num)
+    return result
