@@ -1,0 +1,6 @@
+def make_negative(number):
+    if number <= 0:
+        return number
+    else:
+        converted_number = number * -1
+        return converted_number
