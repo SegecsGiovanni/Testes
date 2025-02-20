@@ -1,0 +1,7 @@
+def square_sum(numbers, *args):
+    high_to_sum = 0
+    for num in numbers:
+            high_to = num ** 2
+            high_to_sum += high_to
+    
+    return high_to_sum
