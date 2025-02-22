@@ -1,0 +1,5 @@
+vogals = "aeiou"
+
+def get_count(sentence):
+    sentence = sum(sentence.count(vogal) for vogal in vogals)
+    return sentence
