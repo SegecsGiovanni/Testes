@@ -1,11 +1,13 @@
 width_var = int(input(f"Insira a largura do terreno: \n"))
 length_var = int(input(f"Insira o comprimento do terreno: \n"))
-squareMeter_var = int(input(f"Insira o valor do metro quadrado: \n"))
+squareMeter_var = int(input(f"Insira o valor do metro quadrado: \n\n"))
 
 def land(width, length, squareMeter):
     LandArea = width * length
     LandPrice = LandArea * squareMeter
-    return LandPrice
+    msg = (f"A area do terreno ficou: {LandArea}m²,\n"
+           f"enquanto o preco final ficou {LandPrice} reais.")
+    return msg
 
 LandTest = land(width_var, length_var, squareMeter_var)
 print(LandTest)
