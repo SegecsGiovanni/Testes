@@ -1,0 +1,54 @@
+# salario atual
+actual_wage = 3000
+
+# despesas obrigatorias
+rent = 600
+faculty = 500
+dentist = 200
+spotify = 12
+youtubeP = 14
+total_expenses = rent + faculty + dentist + spotify + youtubeP
+
+# parcelas e gastos
+supplement = 180
+market = 48
+market_2 = 48
+uber = 14
+total_installments = supplement + market + market_2 + uber
+
+# espaço para variaveis de diversao
+shopping = 160
+restaurant = 100
+total_fun = shopping + restaurant
+
+# funcao para organizar gastos
+def SalaryDivision(wage, expenses, installments, fun):
+    # calculo para organizar em porcentagens
+    Fifty = wage * 0.5
+    Thirty = wage * 0.3
+    Ten = wage * 0.1
+    
+    # gastos com base nas porcentagens
+    spent_50 = Fifty - expenses
+    spent_30 = Thirty - installments
+    spent_10 = Ten - fun
+    
+    #sobra total c/ gastos
+    LeftOver = spent_50 + spent_30 + spent_10
+    
+    # msg de retorno
+    msg = (f'Seu salario de {wage} reais, ficou dividido entre: \n\n'
+    f'{Fifty} para despesas obrigatorias\n'
+    f'{Thirty} para parcelas e gastos do mes\n'
+    f'{Ten} para se divertir\n'
+    f'E {Ten} para investir.\n\n'
+    f'Considerando os gastos atuais, voce ainda tem sobrando pra gastar: \n'
+    f'{spent_50} reais em despesas \n'
+    f'{spent_30} reais em parcelas e gastos do mes \n'
+    f'{spent_10} reais em diversao \n\n'
+    f'Sobrando um total de {LeftOver} reais.')
+    
+    return msg
+
+test = SalaryDivision(actual_wage, total_expenses, total_installments, total_fun)
+print(test)
