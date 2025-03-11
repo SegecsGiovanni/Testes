@@ -1,0 +1,22 @@
+def age_average():
+    age = []
+    num = 1
+    count = 0
+
+    while num > 0:
+        num = 0
+        num = int(input('Digite as idades: '))
+        if num > 0:
+            age.append(num)
+            print(age)
+            count += 1
+            
+    if count <= 0:
+        return 'IMPOSSIVEL CALCULAR, ADICIONE UM NUMERO VALIDO'
+    else:
+        sum_of_age = sum(age)
+        avg = sum_of_age / count
+        return f'A media das idades eh: {round(avg, 2)} anos.'
+        
+test = age_average()
+print(test)
