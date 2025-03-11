@@ -1,0 +1,24 @@
+x = 0
+y = 0
+
+num_1 = int(input('Digite o primeiro numero: \n'))
+print(num_1)
+num_2 = int(input('Digite o segundo numero: \n'))
+print(f'{num_2}\n')
+
+def order(x, y):
+    while x != y:
+        if x < y:
+            print('CRESCENTE\n\n')
+        else:
+            print('DECRESCENTE\n\n')
+        
+        x = int(input('Digite outro primeiro numero: \n'))
+        print(x)
+        y = int(input('Digite outro segundo numero: \n'))
+        print(y)
+    else:
+        return 'Numeros iguais encontrados, teste finalizado!'
+
+test = order(num_1, num_2)
+print(test)
