@@ -4,7 +4,6 @@ def age_average():
     count = 0
 
     while num > 0:
-        num = 0
         num = int(input('Digite as idades: '))
         if num > 0:
             age.append(num)
