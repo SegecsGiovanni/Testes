@@ -1,0 +1,12 @@
+def sum_sum():
+    num_rep = int(input('Quantos numeros serao digitados ? \n'))
+    numbers = 0
+    
+    for num in range(num_rep):
+        num_sum = int(input('Digite um numero: \n'))
+        numbers += num_sum
+        print(num_sum)
+    
+    print(f'A soma total deu: {numbers}')
+
+sum_sum()
