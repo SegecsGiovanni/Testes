@@ -1,0 +1,7 @@
+def solution(string):
+    invert_string = string[::-1]
+    return invert_string
+    
+name = 'Giovanni'
+
+print(solution(name))
